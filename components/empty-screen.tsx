@@ -23,7 +23,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
   return (
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
-        <h1 className="mb-2 text-3xl bg-gradient-to-r from-sky-400 via-pink-500 to-red-400 text-transparent bg-clip-text font-bold">
+        <h1 className="mb-2 text-3xl bg-gradient-to-r from-sky-400 from-10% via-indigo-500 via-30%  to-red-400 to-90% inline-block text-transparent bg-clip-text font-bold">
           Welcome to Comrade!
         </h1>
         <p className="mb-2 text-xl leading-normal text-muted-foreground">
