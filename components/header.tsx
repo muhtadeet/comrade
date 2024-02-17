@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
-import { auth } from '@/auth'
+// import { auth } from '@/auth'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
   IconGitHub,
@@ -17,32 +17,20 @@ import { ThemeToggle } from '@/components/theme-toggle'
 // import { ChatHistory } from './chat-history'
 
 async function UserOrLogin() {
-  const session = await auth()
+  // const session = await auth()
   return (
     <>
-      {session?.user ? (
-        <>
-          {/* <SidebarMobile> */}
-            {/* <ChatHistory userId={session.user.id} /> */}
-          {/* </SidebarMobile> */}
-          {/* <SidebarToggle /> */}
-          <ThemeToggle/>
-        </>
-      ) : (
-        <Link href="/" target="_blank" rel="nofollow">
-          <IconNextChat className="size-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden size-6 mr-2 dark:block" />
-        </Link>
-      )}
+      
+      <ThemeToggle/>
       <div className="flex items-center">
-        <IconSeparator className="size-6 text-muted-foreground/50" />
+        {/* <IconSeparator className="size-6 text-muted-foreground/50" />
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
           <Button variant="link" asChild className="-ml-2">
             <Link href="/sign-in?callbackUrl=/">Login</Link>
           </Button>
-        )}
+        )} */}
       </div>
     </>
   )
