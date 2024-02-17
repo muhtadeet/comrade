@@ -23,14 +23,12 @@ async function UserOrLogin() {
       
       <ThemeToggle/>
       <div className="flex items-center">
-        {/* <IconSeparator className="size-6 text-muted-foreground/50" />
-        {session?.user ? (
-          <UserMenu user={session.user} />
-        ) : (
+        <IconSeparator className="size-6 text-muted-foreground/50" />
+        
           <Button variant="link" asChild className="-ml-2">
-            <Link href="/sign-in?callbackUrl=/">Login</Link>
+            <Link href="/" className='hover:no-underline'><p className='font-pRiot text-3xl hover:text-gray-300 transition-all ease-in-out'>Comrade</p></Link>
           </Button>
-        )} */}
+      
       </div>
     </>
   )
