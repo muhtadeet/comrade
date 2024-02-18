@@ -1,6 +1,7 @@
 import { Toaster } from 'react-hot-toast'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+// import { GeistSans } from 'geist/font/sans'
+// import { GeistMono } from 'geist/font/mono'
+import { Ubuntu } from 'next/font/google'
 
 import '@/app/globals.css'
 import { cn } from '@/lib/utils'
@@ -33,14 +34,20 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  variable: '--font-ubuntu',
+  weight: ['400']
+})
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'font-sans antialiased',
-          GeistSans.variable,
-          GeistMono.variable
+          'font-ubuntu',
+          ubuntu.variable,
+          ubuntu.variable
         )}
       >
         <Toaster />

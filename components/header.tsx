@@ -20,15 +20,20 @@ async function UserOrLogin() {
   // const session = await auth()
   return (
     <>
-      
-      <ThemeToggle/>
+      <ThemeToggle />
       <div className="flex items-center">
         <IconSeparator className="size-6 text-muted-foreground/50" />
-        
-          <Button variant="link" asChild className="-ml-2">
-            <Link href="https://comrade-flame.vercel.app/" className='hover:no-underline'><p className='font-pRiot text-3xl hover:text-gray-300 transition-all ease-in-out'>Comrade</p></Link>
-          </Button>
-      
+
+        <Button variant="link" asChild className="-ml-2">
+          <Link
+            href="https://comrade-flame.vercel.app/"
+            className="hover:no-underline transition-all ease-in-out"
+          >
+            <p className="font-pRiot text-3xl bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% inline-block text-transparent bg-clip-text hover:text-red-400 font-bold transition-all ease-in-out">
+              Comrade
+            </p>
+          </Link>
+        </Button>
       </div>
     </>
   )
@@ -36,7 +41,7 @@ async function UserOrLogin() {
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between w-full h-16 px-4 border-b shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 flex items-center justify-between w-full h-16 px-4 border-b shrink-0 bg-secondary backdrop-blur-xl">
       <div className="flex items-center">
         <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
           <UserOrLogin />

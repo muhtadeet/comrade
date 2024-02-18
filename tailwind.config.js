@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const {fontFamily} = require("tailwindcss/defaultTheme")
+
 module.exports = {
   darkMode: ['class'],
   content: ['app/**/*.{ts,tsx}', 'components/**/*.{ts,tsx}'],
@@ -14,7 +16,8 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
-        pRiot: ["Protest Riot", "sans-serif"]
+        ubuntu: ['var(--font-ubuntu)', ...fontFamily.sans],
+        lato: ['var(--font-lato)', ...fontFamily.sans],
       },
       colors: {
         border: 'hsl(var(--border))',
