@@ -26,7 +26,7 @@ async function UserOrLogin() {
 
         <Button variant="link" asChild className="-ml-2">
           <Link
-            href="https://comrade-flame.vercel.app/"
+            href="/"
             className="hover:no-underline transition-all ease-in-out"
           >
             <p className="font-pRiot text-3xl bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% inline-block text-transparent bg-clip-text hover:text-red-400 font-bold transition-all ease-in-out">
