@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const {fontFamily} = require("tailwindcss/defaultTheme")
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   darkMode: ['class'],
@@ -17,7 +17,7 @@ module.exports = {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
         ubuntu: ['var(--font-ubuntu)', ...fontFamily.sans],
-        lato: ['var(--font-lato)', ...fontFamily.sans],
+        lato: ['var(--font-lato)', ...fontFamily.sans]
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -61,37 +61,64 @@ module.exports = {
       },
       keyframes: {
         'accordion-down': {
-          from: { height: 0 },
+          from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' }
         },
         'accordion-up': {
           from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: 0 }
+          to: { height: '0' }
         },
-        'slide-from-left': {
+        moveHorizontal: {
           '0%': {
-            transform: 'translateX(-100%)'
+            transform: 'translateX(-50%) translateY(-10%)'
+          },
+          '50%': {
+            transform: 'translateX(50%) translateY(10%)'
           },
           '100%': {
-            transform: 'translateX(0)'
+            transform: 'translateX(-50%) translateY(-10%)'
           }
         },
-        'slide-to-left': {
+        moveInCircle: {
           '0%': {
-            transform: 'translateX(0)'
+            transform: 'rotate(0deg)'
+          },
+          '50%': {
+            transform: 'rotate(180deg)'
           },
           '100%': {
-            transform: 'translateX(-100%)'
+            transform: 'rotate(360deg)'
+          }
+        },
+        moveVertical: {
+          '0%': {
+            transform: 'translateY(-50%)'
+          },
+          '50%': {
+            transform: 'translateY(50%)'
+          },
+          '100%': {
+            transform: 'translateY(-50%)'
+          }
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: '0 0'
+          },
+          to: {
+            backgroundPosition: '-200% 0'
           }
         }
       },
       animation: {
-        'slide-from-left':
-          'slide-from-left 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895)',
-        'slide-to-left':
-          'slide-to-left 0.25s cubic-bezier(0.82, 0.085, 0.395, 0.895)',
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        first: 'moveVertical 30s ease infinite',
+        second: 'moveInCircle 20s reverse infinite',
+        third: 'moveInCircle 40s linear infinite',
+        fourth: 'moveHorizontal 40s ease infinite',
+        fifth: 'moveInCircle 20s ease infinite',
+        shimmer: 'shimmer 2s linear infinite'
       }
     }
   },

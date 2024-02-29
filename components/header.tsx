@@ -14,6 +14,7 @@ import { UserMenu } from '@/components/user-menu'
 // import { SidebarMobile } from './sidebar-mobile'
 // import { SidebarToggle } from './sidebar-toggle'
 import { ThemeToggle } from '@/components/theme-toggle'
+import Logo from './logo-public'
 // import { ChatHistory } from './chat-history'
 
 async function UserOrLogin() {
@@ -29,7 +30,7 @@ async function UserOrLogin() {
             href="/"
             className="hover:no-underline transition-all ease-in-out"
           >
-            <p className="font-pRiot text-3xl bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% inline-block text-transparent bg-clip-text hover:text-red-400 font-bold transition-all ease-in-out">
+            <p className="font-pRiot text-3xl inline-flex animate-shimmer items-center justify-center bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% bg-[length:200%_100%] font-bold text-transparent transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ease-in-out duration-400 bg-clip-text">
               Comrade
             </p>
           </Link>
@@ -47,6 +48,14 @@ export function Header() {
           <UserOrLogin />
         </React.Suspense>
       </div>
+      <button className="inline-flex h-7 animate-shimmer dark:invert items-center justify-center rounded-full bg-[linear-gradient(110deg,#000103,45%,#3C4C63,55%,#000103)] bg-[length:200%_100%] px-3 py-5 font-medium text-white transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ease-in-out duration-400">
+        <p className="dark:invert dark:text-black text-sm flex flex-row">
+          <Link href="https://kami-kappa.vercel.app" target="_blank" className='flex flex-row'>
+            Need to note? &nbsp;&nbsp;
+            <Logo />
+          </Link>
+        </p>
+      </button>
       {/* <div className="flex items-center justify-end space-x-2">
         <a
           target="_blank"
