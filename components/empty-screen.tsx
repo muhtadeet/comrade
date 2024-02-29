@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { ExternalLink } from '@/components/external-link'
 import { IconArrowRight } from '@/components/ui/icons'
 import Comrade from './comrade'
+import Image from 'next/image'
 
 const exampleMessages = [
   {
@@ -25,7 +26,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     <div className="mx-auto max-w-3xl px-4">
       <div className="rounded-lg p-4">
         <h1 className="mb-4 text-3xl lg:text-6xl inline-flex animate-shimmer items-center justify-center bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% bg-[length:200%_100%] font-bold text-transparent transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ease-in-out duration-400 bg-clip-text">
-          Salutations, Comrade.&nbsp;<Comrade />
+          Salutations, Comrade.&nbsp;<Image src="/comrade.png" alt="Comrade Logo" width={100} height={100} className='size-9 sm:size-20' />
         </h1>
         <p className="mb-4 text-2xl lg:text-3xl leading-normal text-muted-foreground">
           Crafted with grace, for your delight, by Taron 😁
