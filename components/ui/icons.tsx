@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 import Image from 'next/image'
 
-import Bard from "public/google-bard-1.svg"
+import Bard from "public/comrade.png"
 
 function IconNextChat({
   className,
