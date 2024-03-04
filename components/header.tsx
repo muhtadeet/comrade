@@ -30,7 +30,7 @@ async function UserOrLogin() {
             href="/"
             className="hover:no-underline transition-all ease-in-out"
           >
-            <p className="font-pRiot text-3xl inline-flex animate-shimmer items-center justify-center bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% bg-[length:200%_100%] font-bold text-transparent transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ease-in-out duration-400 bg-clip-text">
+            <p className="font-pRiot text-3xl inline-flex animate-shimmer2 items-center justify-center bg-gradient-to-r from-indigo-400 from-15% to-red-400 to-90% bg-[length:200%_100%] font-bold text-transparent transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ease-in-out duration-400 bg-clip-text">
               Comrade
             </p>
           </Link>

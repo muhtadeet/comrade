@@ -108,6 +108,14 @@ module.exports = {
           to: {
             backgroundPosition: '-200% 0'
           }
+        },
+        shimmer2: {
+          from: {
+            backgroundPosition: '0 0'
+          },
+          to: {
+            backgroundPosition: '-200% 0'
+          }
         }
       },
       animation: {
@@ -118,7 +126,8 @@ module.exports = {
         third: 'moveInCircle 40s linear infinite',
         fourth: 'moveHorizontal 40s ease infinite',
         fifth: 'moveInCircle 20s ease infinite',
-        shimmer: 'shimmer 2s linear infinite'
+        shimmer: 'shimmer 2s linear infinite',
+        shimmer2: 'shimmer 1.5s linear'
       }
     }
   },
