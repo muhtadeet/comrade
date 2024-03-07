@@ -24,7 +24,7 @@ export function PromptForm({
   setInput,
   isLoading
 }: PromptProps) {
-  const { formRef, onKeyDown } = useEnterSubmit()
+  const { formRef } = useEnterSubmit()
   const inputRef = React.useRef<HTMLTextAreaElement>(null)
   const router = useRouter()
   React.useEffect(() => {
@@ -68,7 +68,7 @@ export function PromptForm({
         <Textarea
           ref={inputRef}
           tabIndex={0}
-          onKeyDown={onKeyDown}
+          
           rows={1}
           value={input}
           onChange={e => setInput(e.target.value)}
