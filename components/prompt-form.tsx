@@ -89,7 +89,7 @@ export function PromptForm({
                 <span className="sr-only">Initiate</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Initiate</TooltipContent>
+            <TooltipContent>Ctrl + Enter to Initiate</TooltipContent>
           </Tooltip>
         </div>
       </div>
