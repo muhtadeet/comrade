@@ -86,7 +86,7 @@ export function PromptForm({
                 disabled={isLoading || input === ''}
               >
                 <IconArrowElbow />
-                <span className="sr-only">Initiate</span>
+                <span className="sr-only">Shift + Enter to Initiate</span>
               </Button>
             </TooltipTrigger>
             <TooltipContent>Initiate</TooltipContent>
