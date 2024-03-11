@@ -11,7 +11,7 @@ export function useEnterSubmit(): {
   ): void => {
     if (
       event.key === 'Enter' &&
-      event.shiftKey 
+      event.ctrlKey 
     ) {
       formRef.current?.requestSubmit()
       event.preventDefault()
