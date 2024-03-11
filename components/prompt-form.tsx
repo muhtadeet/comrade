@@ -24,7 +24,7 @@ export function PromptForm({
   setInput,
   isLoading
 }: PromptProps) {
-  const { formRef } = useEnterSubmit()
+  const { formRef, onKeyDown } = useEnterSubmit()
   const inputRef = React.useRef<HTMLTextAreaElement>(null)
   const router = useRouter()
   React.useEffect(() => {
@@ -68,7 +68,6 @@ export function PromptForm({
         <Textarea
           ref={inputRef}
           tabIndex={0}
-          
           rows={1}
           value={input}
           onChange={e => setInput(e.target.value)}
@@ -82,14 +81,14 @@ export function PromptForm({
               <Button
                 type="submit"
                 size="icon"
-                className='bg-gradient-to-br from-indigo-400 from-15% to-red-400 to-90% mr-5 sm:mr-0'
+                className="bg-gradient-to-br from-indigo-400 from-15% to-red-400 to-90% mr-5 sm:mr-0"
                 disabled={isLoading || input === ''}
               >
                 <IconArrowElbow />
-                <span className="sr-only">Shift + Enter to Initiate</span>
+                <span className="sr-only">Initiate</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Initiate</TooltipContent>
+            <TooltipContent>Shift + Enter to Initiate</TooltipContent>
           </Tooltip>
         </div>
       </div>
