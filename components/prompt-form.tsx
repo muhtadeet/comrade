@@ -70,6 +70,7 @@ export function PromptForm({
           tabIndex={0}
           rows={1}
           value={input}
+          onKeyDown={onKeyDown}
           onChange={e => setInput(e.target.value)}
           placeholder="At your service, Your Majesty!"
           spellCheck={false}
@@ -88,7 +89,7 @@ export function PromptForm({
                 <span className="sr-only">Initiate</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Ctrl + Enter to Initiate</TooltipContent>
+            <TooltipContent>Initiate</TooltipContent>
           </Tooltip>
         </div>
       </div>
