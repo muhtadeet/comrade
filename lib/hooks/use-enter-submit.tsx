@@ -11,8 +11,7 @@ export function useEnterSubmit(): {
   ): void => {
     if (
       event.key === 'Enter' &&
-      event.shiftKey &&
-      !event.nativeEvent.isComposing
+      event.shiftKey 
     ) {
       formRef.current?.requestSubmit()
       event.preventDefault()
