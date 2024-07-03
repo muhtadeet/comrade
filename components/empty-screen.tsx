@@ -29,7 +29,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Salutations, Comrade.&nbsp;<Image src="/comrade.png" alt="Comrade Logo" width={100} height={100} className='size-9 sm:size-20' />
         </h1>
         <p className="mb-4 text-2xl lg:text-3xl leading-normal text-muted-foreground">
-          Crafted with grace, for your delight, by Taron 😁
+          Crafted with grace, for your delight 😁
         </p>
         <p className="leading-normal text-lg lg:text-xl mb-4 text-muted-foreground font-lato">
           In unwavering service, I, the humble attendant of His Royal Highness,
