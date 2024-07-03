@@ -11,7 +11,7 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Built for you. With care. hihi
+      Built for you. With care.
     </p>
   )
 }
