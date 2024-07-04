@@ -33,7 +33,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
         </p>
         <p className="leading-normal text-lg lg:text-xl mb-4 text-muted-foreground font-lato">
           In unwavering service, I, the humble attendant of His Royal Highness,
-          Taron, dedicate every fiber of my being to your exalted presence. Thy
+          dedicate every fiber of my being to your exalted presence. Thy
           request is my sovereign desire:
         </p>
         <div className="mt-5 flex flex-col items-start space-y-2">
